@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    background-color: #08090A;
+
+    p {
+        margin: 0;
+    }
+
+    .center {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            font-size: 2vw;
+            font-family: 'Fugaz One', cursive;
+        }
+
+        h2 {
+            font-size: 0.9vw;
+            margin: 0;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+            margin-top: 10px;
+            border: none;
+            color: white;
+            font-weight: 800;
+            padding: 10px;
+            background-color: #FF4F4F;
+
+        }
+    }
+}

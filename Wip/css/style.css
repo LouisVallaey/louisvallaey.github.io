@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
+/* line 4, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+body {
+  margin: 0 auto;
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  background-color: #08090A; }
+  /* line 10, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+  body p {
+    margin: 0; }
+  /* line 14, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+  body .center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    /* line 20, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+    body .center h1 {
+      margin: 0;
+      font-size: 2vw;
+      font-family: 'Fugaz One', cursive; }
+    /* line 26, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+    body .center h2 {
+      font-size: 0.9vw;
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif; }
+    /* line 32, /Users/louisvallaey/Documents/Louisvallaey/Wip/css/style.scss */
+    body .center button {
+      cursor: pointer;
+      margin-top: 10px;
+      border: none;
+      color: white;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #FF4F4F; }
+
+/*# sourceMappingURL=style.css.map */
