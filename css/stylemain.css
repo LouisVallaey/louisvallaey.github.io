@@ -1,62 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
-/* line 4, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+/* line 4, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
 body {
   margin: 0 auto;
   font-family: 'Rajdhani', sans-serif;
   color: white; }
-  /* line 10, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 10, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   body p {
     margin: 0; }
 
-/* line 15, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+/* line 15, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
 .typewriterbox {
   height: 100vh;
   min-height: 100vh;
   background-color: #08090A; }
-  /* line 21, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 21, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .logo {
     display: flex;
     align-items: center;
     height: 9vh; }
-  /* line 27, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 27, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox p {
     font-size: 25px;
     margin: 0 0 0 30px;
     color: white; }
-  /* line 33, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 33, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .container {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90vh; }
-  /* line 41, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 41, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .output {
     padding-bottom: 100px;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
     color: white; }
-    /* line 47, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 47, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .typewriterbox .output h1 {
       font-weight: 200;
       font-size: 30px; }
-    /* line 52, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 52, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .typewriterbox .output p {
       font-size: 24px; }
-  /* line 57, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 57, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .explore {
     cursor: pointer;
     opacity: 0;
     width: 100%;
     position: absolute;
     bottom: 80px; }
-  /* line 65, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 65, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .icon-scroll,
   .typewriterbox .icon-scroll:before {
     position: absolute;
     left: 50%; }
-  /* line 71, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 71, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .icon-scroll {
     width: 40px;
     height: 70px;
@@ -65,7 +65,7 @@ body {
     margin-top: -35px;
     box-shadow: inset 0 0 0 2px #fff;
     border-radius: 25px; }
-  /* line 81, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 81, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .icon-scroll:before {
     content: '';
     width: 8px;
@@ -105,7 +105,7 @@ body {
   100% {
     opacity: 0;
     transform: translateY(46px); } }
-  /* line 139, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 139, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox .cursor::after {
     content: '';
     display: inline-block;
@@ -114,11 +114,11 @@ body {
     animation-name: blink;
     animation-duration: 0.5s;
     animation-iteration-count: infinite; }
-  /* line 149, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 149, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox h1.cursor::after {
     height: 24px;
     width: 13px; }
-  /* line 154, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 154, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .typewriterbox p.cursor::after {
     height: 17px;
     width: 8px; }
@@ -133,13 +133,14 @@ body {
   100% {
     opacity: 0; } }
 
-/* line 178, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+/* line 178, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
 .nextbox {
   background-color: #fff;
   display: none;
   height: 100vh; }
-  /* line 183, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 183, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .nextbox .row {
+    margin: 0;
     padding: 0;
     list-style-type: none;
     width: 100%;
@@ -147,7 +148,7 @@ body {
     display: flex;
     align-items: stretch;
     justify-content: center; }
-    /* line 192, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 193, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .nextbox .row .column {
       transition: all .2s ease-in-out;
       width: 33%;
@@ -156,52 +157,55 @@ body {
       justify-content: center;
       cursor: pointer;
       flex-grow: 1; }
-      /* line 199, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 200, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column .text {
         color: white;
         text-decoration: none;
         text-align: center; }
-        /* line 204, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+        /* line 205, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
         .nextbox .row .column .text h1 {
           font-size: 32px;
           margin: 0; }
-        /* line 209, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+        /* line 210, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
         .nextbox .row .column .text i {
           animation: bounce 2s infinite alternate;
           -webkit-animation: bounce 2s infinite alternate;
           font-size: 30px; }
-      /* line 219, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 220, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column:nth-child(1) {
+        background: radial-gradient(#302869, #241E4E);
         background-color: #241E4E; }
-      /* line 223, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 225, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column:nth-child(2) {
+        background: radial-gradient(#ff7c7c, #FF4F4F);
         background-color: #FF4F4F; }
-      /* line 227, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 230, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column:nth-child(3) {
+        background: radial-gradient(#22b4ff, #008DD5);
         background-color: #008DD5; }
-      /* line 232, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 236, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column:hover {
         transform: scale(0.95); }
 
-/* line 239, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+/* line 243, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
 .footer {
   width: 100%;
   display: flex;
   justify-content: center;
   background-color: #08090A; }
-  /* line 245, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 249, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .footer .text {
     width: auto;
     margin-right: 10px;
     display: flex;
     margin-top: 40px;
     margin-bottom: 40px; }
-    /* line 252, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 256, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .footer .text i {
       color: #4392F1;
       margin-right: 4px;
       font-size: 18px; }
-    /* line 258, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 262, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .footer .text p {
       font-size: 14px; }
 
@@ -218,25 +222,25 @@ body {
     transform: translateY(-15px); } }
 
 @media screen and (max-width: 900px) {
-  /* line 285, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 289, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .nextbox {
     height: 99vh; }
-    /* line 288, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 292, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .nextbox .row {
       height: 100vh;
       display: block; }
-      /* line 292, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+      /* line 296, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
       .nextbox .row .column {
         width: 100%;
         height: 33vh; }
-  /* line 299, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+  /* line 303, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
   .footer {
     display: inherit;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
     padding-bottom: 20px; }
-    /* line 306, /Users/louisvallaey/Documents/Louisvallaey/css/stylemain.scss */
+    /* line 310, /Users/louisvallaey/Documents/louisvallaey.github.io/css/stylemain.scss */
     .footer .text {
       padding-left: 10px; } }
 

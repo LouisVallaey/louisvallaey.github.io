@@ -96,7 +96,7 @@ window.onload = function () {
                 }, 2000);
                 $('html, body').animate({
                     scrollTop: $('section.stuff').offset().top
-                }, 'slow');
+                }, 'fast');
             }, 0);
         } else {
             sessionStorage.setItem("Welcome", "1");
