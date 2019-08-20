@@ -7,6 +7,31 @@ body {
     color: white;
     background-color: #08090A;
 
+    .header {
+        z-index: 100;
+        position: absolute;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            height: 9vh;
+
+            p {
+                font-size: 25px;
+                margin: 0 0 0 30px;
+                color: white;
+
+                &:nth-child(2) {
+                    line-height: 24px;
+                    color: #FF4F4F;
+                    margin: 0;
+                    border-right: 2px solid rgba(255, 255, 255, .75);
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+
     p {
         margin: 0;
     }
@@ -39,5 +64,46 @@ body {
             background-color: #FF4F4F;
 
         }
+    }
+}
+
+.anim-typewriterdev {
+    animation: typewriterdev 500ms steps(44) 500ms 1 normal both,
+        blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@keyframes typewriterdev {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 2em;
+    }
+}
+
+
+.anim-typewriter {
+    animation: typewriter 500ms steps(44) 500ms 1 normal both,
+        blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 3.3em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+
+    to {
+        border-right-color: transparent;
     }
 }
