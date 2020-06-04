@@ -1,109 +1,107 @@
-@import url('https://fonts.googleapis.com/css?family=Rajdhani&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
 
 body {
-    margin: 0 auto;
-    font-family: 'Rajdhani', sans-serif;
-    color: white;
-    background-color: #08090A;
+  margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  background-color: #08090a;
 
-    .header {
-        z-index: 100;
-        position: absolute;
+  .header {
+    z-index: 100;
+    position: absolute;
 
-        .logo {
-            display: flex;
-            align-items: center;
-            height: 9vh;
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 9vh;
 
-            p {
-                font-size: 25px;
-                margin: 0 0 0 30px;
-                color: white;
+      p {
+        font-size: 25px;
+        margin: 0 0 0 30px;
+        color: white;
 
-                &:nth-child(2) {
-                    line-height: 24px;
-                    color: #FF4F4F;
-                    margin: 0;
-                    border-right: 2px solid rgba(255, 255, 255, .75);
-                    overflow: hidden;
-                }
-            }
+        &:nth-child(2) {
+          line-height: 24px;
+          color: #ff4f4f;
+          margin: 0;
+          border-right: 2px solid rgba(255, 255, 255, 0.75);
+          overflow: hidden;
         }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 2vw;
+      font-family: "Fugaz One", cursive;
     }
 
-    p {
-        margin: 0;
+    h2 {
+      font-size: 0.9vw;
+      margin: 0;
+      font-family: "Rajdhani", sans-serif;
     }
 
-    .center {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            margin: 0;
-            font-size: 2vw;
-            font-family: 'Fugaz One', cursive;
-        }
-
-        h2 {
-            font-size: 0.9vw;
-            margin: 0;
-            font-family: 'Rajdhani', sans-serif;
-        }
-
-        button {
-            cursor: pointer;
-            margin-top: 10px;
-            border: none;
-            color: white;
-            font-weight: 800;
-            padding: 10px;
-            background-color: #FF4F4F;
-
-        }
+    button {
+      cursor: pointer;
+      margin-top: 10px;
+      border: none;
+      color: white;
+      font-weight: 800;
+      padding: 10px;
+      background-color: #ff4f4f;
     }
+  }
 }
 
 .anim-typewriterdev {
-    animation: typewriterdev 500ms steps(44) 500ms 1 normal both,
-        blinkTextCursor 700ms steps(44) infinite normal;
+  animation: typewriterdev 500ms steps(44) 500ms 1 normal both,
+    blinkTextCursor 700ms steps(44) infinite normal;
 }
 
 @keyframes typewriterdev {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 2em;
-    }
+  to {
+    width: 2em;
+  }
 }
 
-
 .anim-typewriter {
-    animation: typewriter 500ms steps(44) 500ms 1 normal both,
-        blinkTextCursor 700ms steps(44) infinite normal;
+  animation: typewriter 500ms steps(44) 500ms 1 normal both,
+    blinkTextCursor 700ms steps(44) infinite normal;
 }
 
 @keyframes typewriter {
-    from {
-        width: 0;
-    }
+  from {
+    width: 0;
+  }
 
-    to {
-        width: 3.3em;
-    }
+  to {
+    width: 2.3em;
+  }
 }
 
 @keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
-    }
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
 
-    to {
-        border-right-color: transparent;
-    }
+  to {
+    border-right-color: transparent;
+  }
 }

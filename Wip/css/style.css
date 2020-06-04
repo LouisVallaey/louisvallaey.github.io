@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
 body {
   margin: 0 auto;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: white;
-  background-color: #08090A;
+  background-color: #08090a;
 }
 
 body .header {
@@ -30,7 +30,7 @@ body .header .logo p {
 
 body .header .logo p:nth-child(2) {
   line-height: 24px;
-  color: #FF4F4F;
+  color: #ff4f4f;
   margin: 0;
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   overflow: hidden;
@@ -56,13 +56,13 @@ body .center {
 body .center h1 {
   margin: 0;
   font-size: 2vw;
-  font-family: 'Fugaz One', cursive;
+  font-family: "Fugaz One", cursive;
 }
 
 body .center h2 {
   font-size: 0.9vw;
   margin: 0;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
 }
 
 body .center button {
@@ -72,7 +72,7 @@ body .center button {
   color: white;
   font-weight: 800;
   padding: 10px;
-  background-color: #FF4F4F;
+  background-color: #ff4f4f;
 }
 
 .anim-typewriterdev {
@@ -108,7 +108,7 @@ body .center button {
     width: 0;
   }
   to {
-    width: 3.3em;
+    width: 2.3em;
   }
 }
 
@@ -117,7 +117,7 @@ body .center button {
     width: 0;
   }
   to {
-    width: 3.3em;
+    width: 2.3em;
   }
 }
 
