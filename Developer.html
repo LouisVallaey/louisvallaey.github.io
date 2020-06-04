@@ -5,40 +5,153 @@
     <meta charset="UTF-8">
     <meta name="robots" content="index, follow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hi I am a developer based in Belgium, This website shows my history of projects and knowledge.">
-    <title>Developer</title>
-    <link rel="stylesheet" href="Wip/css/style.css">
+    <meta name="description"
+        content="Hi I am a developer based in Belgium, This website gives you an opportunity to explore a small part of my portfolio.">
+    <title>Designer</title>
+    <link rel="stylesheet" href="Dev/css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favi.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8b39122fa.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="Wip/js/anim.js"></script>
+    <script type="text/javascript" src="Dev/js/anim.js"></script>
 </head>
 
 <body>
     <div class="header">
         <div class="logo">
             <p class="scale-up-center">LOUIS VALLAEY </p>
-            <p class="anim-typewriterdev">/DEV</p>
+            <p class="anim-typewriter" style="color: #ff4f4f">/DEV</p>
         </div>
     </div>
-    <div class="center">
-        <div>
-            <h1>ITS A WORK IN PROGRESS...</h1>
-            <h2>@every developer ever</h2>
+    <div class="contentBlock">
+        <div class="content" data-aos="fade-up">
+            <div class="leftImage">
+            </div>
+            <div class="rightText">
+                <h1 class="headercontent">
+                    PROJECT GLAN
+                </h1>
+                <h1 class="undertitle">"A COLLABORATION BETWEEN FRIENDS" <i>2017</i></h1>
+                <div class="usedthings">
+                    <i class="fab fa-angular"></i>
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <p class="textcontent">This is the first Full stack project that i made with 2 other
+                    friends, we used
+                    Angular.js in
+                    combination with expres.js and a lot more packages, this project took us more than 6 months to
+                    complete and has a lot of
+                    features, and is still being used every year at our lanparty. Some of the features: register and
+                    ticketing system with payment methods, live interaction screen for competitions that are being
+                    played at the lanparty, Tournament registration pages, Registry tool for our catering (cash register
+                    system), extended administration dashboard. </p>
 
-            <button onclick="location.href='index.html';">BACK TO CONTENT</button>
-            <h2 style="margin-top: 20px;">Contact me!</h2>
-            <div class="text" style="display: flex; align-items: center; margin-top: 10px;">
-                <i class="material-icons" style="margin-right: 4px;">email</i>
+                <div class="icons">
+                    <a class="text" href="https://www.glan.be/" target="_blank">
+                        <i class="fas fa-globe fa-1x"></i>
+                    </a></li>
+                    <a class="text" href="https://github.com/MatthiasDh/GLanGeraardsbergen" target="_blank">
+                        <i class="fab fa-github fa-1x"></i>
+                    </a></li>
+                </div>
+            </div>
+        </div>
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,100 100,30 100,100" />
+        </svg>
+    </div>
+    <div class="contentBlockW">
+        <div class="content" data-aos="fade-up">
+            <div class="leftImage">
+            </div>
+            <div class="rightText">
+                <h1 class="headercontent" data-aos="fade-up">
+                    PROJECT ENCREW
+                </h1>
+                <h1 class="undertitle" data-aos="fade-up">"A BIT MORE EXPERIENCED AND SERIOUS" <i>2020</i></h1>
+                <div class="usedthings" data-aos="fade-up">
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-node-js"></i>
+                    <i class="fas fa-border-none"></i>
+                </div>
+                <div data-aos="fade-up">
+                    <p class="textcontent">After working in the 'programming world' for a couple of years
+                        and doing work for
+                        clients, I decided (with a couple of friends/colleagues) to spent some time researching what we
+                        could develop in our spare time, we landed on the idea of creating a customer relationship
+                        management, after alot of researching and studying the market we began at the fun part,
+                        programming!
+                        Encrew is still a work in progress and will be a work in progress for a while. We calculated a
+                        timeline of 2 years. Encrew will be built on the React library, and the backend will be
+                        programmed
+                        in a microservice structure. </p>
+
+                    <div class="icons">
+                        <a class="text" href="http://www.encrew.be/" target="_blank">
+                            <i class="fas fa-globe fa-1x"></i>
+                        </a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div data-aos="fade-up" aos-duration="800">
+        <div class="slant">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="#08090A" points="0,100 100,30 100,100" />
+            </svg>
+        </div>
+        <div class="footer">
+            <h1>INTERESTED IN HIRING ME ?</h1>
+            <h1>INTERESTED IN HIRING ME ?</h1>
+            <h1>INTERESTED IN HIRING ME ?</h1>
+
+            <div class="container">
+                <form action="javascript:;" onsubmit="sendemail(this)">
+                    <div class="top">
+                        <input type="text" id="mail" name="mail" placeholder="Email adress">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+                    <div> <input type="submit" value="SUBMIT"></div>
+
+                </form>
+            </div>
+        </div>
+        <div class="footerR">
+
+            <div class="text">
+                <i class="material-icons">email</i>
                 <p>info@louisvallaey.be</p>
             </div>
-            <div class="text" style="display: flex; align-items: center; ">
-                <i class="material-icons" style="margin-right: 4px;">phone</i>
+            <div class="text">
+                <i class="material-icons">phone</i>
                 <p>0472 09 87 91</p>
+            </div>
+            <div class="text">
+                <i class="material-icons">copyright</i>
+                <p>All rights reserved. Website made by LouisVallaey</p>
             </div>
         </div>
     </div>
+</body>
+<script>
+    function sendemail(form) {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("mail").value;
+        var contact = document.getElementById("subject").value;
+        Email.send({
+            SecureToken: "bc53f7eb-d5ce-4953-8ee1-01670812e1c5",
+            To: 'info@louisvallaey.be',
+            From: 'lvallaey@gmail.com',
+            Subject: "email from websiteform Photography",
+            Body: name + " " + email + " " + contact
+        }).then(alert("Mail has been sent!"));
+    }
 
-</body></html>
+</script>
+
+</html>

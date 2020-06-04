@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
+body {
+  margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
+  background-color: white;
+}
+
+.header {
+  z-index: 100;
+  position: absolute;
+}
+
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9vh;
+}
+
+.header .logo p {
+  font-size: 25px;
+  margin: 0 0 0 30px;
+  color: white;
+}
+
+.header .logo p:nth-child(2) {
+  line-height: 24px;
+  width: 60px;
+  color: #352c71;
+  margin: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+
+.contentBlock {
+  font-family: "Fugaz One", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 116vh;
+  background-color: #080808;
+}
+
+.contentBlock svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 20vh;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.contentBlock .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 100vh;
+}
+
+.contentBlock .content .leftImage {
+  opacity: 0;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 70vh;
+  background-image: url("../img/glan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contentBlock .content .rightText {
+  margin-left: 50px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.contentBlock .content .rightText .usedthings {
+  opacity: 0;
+  color: #ff4f4f;
+}
+
+.contentBlock .content .rightText .headercontent {
+  opacity: 0;
+  color: white;
+  font-size: 50px;
+  margin: 0;
+  line-height: 36px;
+}
+
+.contentBlock .content .rightText .undertitle {
+  opacity: 0;
+  margin: 0;
+  color: #ff4f4f;
+  font-size: 15px;
+}
+
+.contentBlock .content .rightText .textcontent {
+  opacity: 0;
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.contentBlock .content .rightText .icons {
+  opacity: 0;
+}
+
+.contentBlock .content .rightText .icons a {
+  text-decoration: none;
+  color: white;
+}
+
+.contentBlockW {
+  font-family: "Fugaz One", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+}
+
+.contentBlockW .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 80%;
+  height: 70vh;
+}
+
+.contentBlockW .content .leftImage {
+  opacity: 0;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  height: 70vh;
+  background-color: white;
+  background-image: url("../img/encrew.png");
+  background-size: cover;
+}
+
+.contentBlockW .content .rightText {
+  text-align: right;
+  margin-right: 50px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.contentBlockW .content .rightText .usedthings {
+  opacity: 0;
+  color: #008dd5;
+}
+
+.contentBlockW .content .rightText .headercontent {
+  opacity: 0;
+  color: black;
+  font-size: 50px;
+  margin: 0;
+  line-height: 36px;
+}
+
+.contentBlockW .content .rightText .undertitle {
+  opacity: 0;
+  margin: 0;
+  color: #008dd5;
+  font-size: 15px;
+}
+
+.contentBlockW .content .rightText .textcontent {
+  opacity: 0;
+  font-family: "Rajdhani", sans-serif;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.contentBlockW .content .rightText .icons {
+  opacity: 0;
+}
+
+.contentBlockW .content .rightText .icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.slant {
+  margin-top: 150px;
+  height: 10vw;
+  position: relative;
+}
+
+.slant svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+.footerR {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #08090a;
+}
+
+.footerR .text {
+  width: auto;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footerR .text i {
+  color: #4392f1;
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.footerR .text p {
+  font-family: "Rajdhani", sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+.footerR .text a {
+  color: white;
+}
+
+.footer {
+  padding-top: 1vw;
+  padding-right: 240px;
+  padding-left: 240px;
+  text-align: right;
+  height: 20vw;
+  background-color: #08090a;
+}
+
+.footer h1 {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  font-family: "Fugaz One", cursive;
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  line-height: 24px;
+}
+
+.footer h1:nth-child(2) {
+  color: #ff4f4f;
+}
+
+.footer h1:nth-child(3) {
+  color: #008dd5;
+}
+
+.container {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .top {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.container .top input {
+  outline: none;
+  padding-left: 10px;
+  margin: 5px;
+  width: 251px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  color: black;
+}
+
+.container textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  width: 529px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.container div:nth-child(3) input {
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  width: 120px;
+  background-color: #008dd5;
+  color: white;
+}
+
+.container label {
+  color: white;
+}
+
+/* Animation */
+.anim-typewriter {
+  -webkit-animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+          animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 2em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 2em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  to {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imagegrid .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner .quote {
+    display: none;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .imagegrid .box {
+    display: block;
+  }
+  .imagegrid .box .item img {
+    height: auto !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
+  .footer {
+    padding-top: 60px;
+    padding-right: 10px;
+  }
+  .footer h1 {
+    font-size: 6vw;
+    line-height: 3vw;
+  }
+  .footerR {
+    display: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footerR .text {
+    padding-left: 10px;
+  }
+  .container .top input {
+    width: 25vw;
+  }
+  .container textarea {
+    width: 53vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner .quote {
+    display: none;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

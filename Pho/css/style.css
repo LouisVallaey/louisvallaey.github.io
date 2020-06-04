@@ -2,392 +2,515 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap");
-/* line 4, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
 body {
   margin: 0 auto;
   font-family: 'Rajdhani', sans-serif;
-  background-color: white; }
+  background-color: white;
+}
 
-/* line 10, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
 .header {
   z-index: 100;
-  position: absolute; }
-  /* line 14, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .header .logo {
-    display: flex;
-    align-items: center;
-    height: 9vh; }
-    /* line 19, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .header .logo p {
-      font-size: 25px;
-      margin: 0 0 0 30px;
-      color: white; }
-      /* line 24, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-      .header .logo p:nth-child(2) {
-        line-height: 24px;
-        color: #352c71;
-        margin: 0;
-        border-right: 2px solid rgba(255, 255, 255, 0.75);
-        overflow: hidden; }
+  position: absolute;
+}
 
-/* line 37, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9vh;
+}
+
+.header .logo p {
+  font-size: 25px;
+  margin: 0 0 0 30px;
+  color: white;
+}
+
+.header .logo p:nth-child(2) {
+  line-height: 24px;
+  color: #352c71;
+  margin: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+
 .banner {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   position: relative;
   width: 100%;
   height: 0vh;
-  background-color: #08090A; }
-  /* line 44, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .banner .image {
-    transition: all 1s ease-in-out;
-    position: absolute;
-    height: 70vh; }
-    /* line 49, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .banner .image img {
-      transition: all 1s ease-in-out;
-      opacity: 0;
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
-      overflow: hidden;
-      transform: translateZ(-1px); }
-  /* line 60, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .banner .quote {
-    transition: all 1s ease-in-out;
-    text-align: right;
-    position: absolute;
-    right: 240px;
-    top: 230px; }
-    /* line 67, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .banner .quote h1 {
-      transition: all 1s ease-in-out;
-      opacity: 0;
-      font-family: 'Fugaz One', cursive;
-      margin: 0;
-      color: white;
-      font-size: 80px;
-      line-height: 49px; }
-      /* line 78, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-      .banner .quote h1:nth-child(2) {
-        letter-spacing: 4px;
-        color: #FF4F4F; }
-      /* line 83, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-      .banner .quote h1:nth-child(3) {
-        color: #008DD5; }
-  /* line 90, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .banner svg {
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    height: 10vw;
-    /* set height to pixels if you want angle to change with screen width */ }
+  background-color: #08090A;
+}
 
-/* line 101, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.banner .image {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  height: 70vh;
+}
+
+.banner .image img {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  width: 100%;
+  height: 70vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
+}
+
+.banner .quote {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: right;
+  position: absolute;
+  right: 240px;
+  top: 230px;
+}
+
+.banner .quote h1 {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  font-family: 'Fugaz One', cursive;
+  margin: 0;
+  color: white;
+  font-size: 80px;
+  line-height: 49px;
+}
+
+.banner .quote h1:nth-child(2) {
+  letter-spacing: 4px;
+  color: #FF4F4F;
+}
+
+.banner .quote h1:nth-child(3) {
+  color: #008DD5;
+}
+
+.banner svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
 .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 30vh;
-  width: 100%; }
-  /* line 108, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .portfolio .title {
-    opacity: 0;
-    transition: all 1s ease-in-out;
-    text-align: center; }
-    /* line 113, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .portfolio .title i {
-      margin-top: 20px;
-      cursor: pointer;
-      font-size: 40px;
-      animation: bounce 2s infinite alternate;
-      -webkit-animation: bounce 2s infinite alternate; }
-    /* line 121, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .portfolio .title h1 {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif; }
-      /* line 125, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-      .portfolio .title h1:nth-child(2) {
-        font-size: 40px;
-        color: #FF4F4F; }
+  width: 100%;
+}
 
-/* line 133, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.portfolio .title {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  text-align: center;
+}
+
+.portfolio .title i {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 40px;
+  animation: bounce 2s infinite alternate;
+  -webkit-animation: bounce 2s infinite alternate;
+}
+
+.portfolio .title h1 {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.portfolio .title h1:nth-child(2) {
+  font-size: 40px;
+  color: #FF4F4F;
+}
+
 .imagegrid {
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
   display: none;
-  opacity: 0; }
-  /* line 139, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .imagegrid .box {
-    padding: 0px 0px 0px 0px;
-    display: flex;
-    margin: 0 auto 0px auto;
-    width: 1000px; }
-    /* line 145, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box .item {
-      margin: 5px 5px 0px 5px;
-      position: relative;
-      background: #ffffff;
-      transition: all 0.2s ease-in-out;
-      overflow: hidden; }
-    /* line 156, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(1) .item:nth-child(1) img {
-      height: 455px; }
-    /* line 162, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(1) .item:nth-child(2) img {
-      height: 455px; }
-    /* line 172, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(2) .item:nth-child(1) img {
-      height: 455px; }
-    /* line 178, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(2) .item:nth-child(2) img {
-      height: 455px; }
-    /* line 188, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(3) .item:nth-child(1) img {
-      height: 475px; }
-    /* line 194, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(3) .item:nth-child(2) img {
-      height: 475px; }
-    /* line 204, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(4) .item:nth-child(1) img {
-      height: 475px; }
-    /* line 210, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(4) .item:nth-child(2) img {
-      height: 475px; }
-    /* line 220, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(5) .item:nth-child(1) img {
-      height: 475px; }
-    /* line 226, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(5) .item:nth-child(2) img {
-      height: 475px; }
-    /* line 236, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(6) .item:nth-child(1) img {
-      height: 475px; }
-    /* line 242, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(6) .item:nth-child(2) img {
-      height: 475px; }
-    /* line 252, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(7) .item:nth-child(1) img {
-      height: 453px; }
-    /* line 258, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(7) .item:nth-child(2) img {
-      height: 453px; }
-    /* line 268, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(8) .item:nth-child(1) img {
-      height: 453px; }
-    /* line 274, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(8) .item:nth-child(2) img {
-      height: 453px; }
-    /* line 284, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(9) .item:nth-child(1) img {
-      height: 401px; }
-    /* line 290, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box:nth-child(9) .item:nth-child(2) img {
-      height: 401px; }
+  opacity: 0;
+}
 
-/* line 299, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.imagegrid .box {
+  padding: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 0px auto;
+  width: 1000px;
+}
+
+.imagegrid .box .item {
+  margin: 5px 5px 0px 5px;
+  position: relative;
+  background: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.imagegrid .box:nth-child(1) .item:nth-child(1) img {
+  height: 455px;
+}
+
+.imagegrid .box:nth-child(1) .item:nth-child(2) img {
+  height: 455px;
+}
+
+.imagegrid .box:nth-child(2) .item:nth-child(1) img {
+  height: 455px;
+}
+
+.imagegrid .box:nth-child(2) .item:nth-child(2) img {
+  height: 455px;
+}
+
+.imagegrid .box:nth-child(3) .item:nth-child(1) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(3) .item:nth-child(2) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(4) .item:nth-child(1) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(4) .item:nth-child(2) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(5) .item:nth-child(1) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(5) .item:nth-child(2) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(6) .item:nth-child(1) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(6) .item:nth-child(2) img {
+  height: 475px;
+}
+
+.imagegrid .box:nth-child(7) .item:nth-child(1) img {
+  height: 453px;
+}
+
+.imagegrid .box:nth-child(7) .item:nth-child(2) img {
+  height: 453px;
+}
+
+.imagegrid .box:nth-child(8) .item:nth-child(1) img {
+  height: 453px;
+}
+
+.imagegrid .box:nth-child(8) .item:nth-child(2) img {
+  height: 453px;
+}
+
+.imagegrid .box:nth-child(9) .item:nth-child(1) img {
+  height: 401px;
+}
+
+.imagegrid .box:nth-child(9) .item:nth-child(2) img {
+  height: 401px;
+}
+
 .slant {
   margin-top: 150px;
   height: 10vw;
-  position: relative; }
-  /* line 304, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .slant svg {
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    height: 10vw;
-    /* set height to pixels if you want angle to change with screen width */ }
+  position: relative;
+}
 
-/* line 313, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.slant svg {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 10vw;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
 .footerR {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  background-color: #08090A; }
-  /* line 319, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .footerR .text {
-    width: auto;
-    margin-right: 10px;
-    display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px; }
-    /* line 326, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footerR .text i {
-      color: #4392F1;
-      margin-right: 4px;
-      font-size: 18px; }
-    /* line 332, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footerR .text p {
-      font-family: 'Rajdhani', sans-serif;
-      color: white;
-      margin: 0;
-      font-size: 14px; }
-    /* line 339, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footerR .text a {
-      color: white; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #08090A;
+}
 
-/* line 345, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+.footerR .text {
+  width: auto;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footerR .text i {
+  color: #4392F1;
+  margin-right: 4px;
+  font-size: 18px;
+}
+
+.footerR .text p {
+  font-family: 'Rajdhani', sans-serif;
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+.footerR .text a {
+  color: white;
+}
+
 .footer {
   padding-top: 1vw;
   padding-right: 240px;
   padding-left: 240px;
   text-align: right;
   height: 20vw;
-  background-color: #08090A; }
-  /* line 353, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .footer h1 {
-    transition: all 1s ease-in-out;
-    font-family: 'Fugaz One', cursive;
-    margin: 0;
-    color: white;
-    font-size: 40px;
-    line-height: 24px; }
-    /* line 363, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footer h1:nth-child(2) {
-      color: #FF4F4F; }
-    /* line 367, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footer h1:nth-child(3) {
-      color: #008DD5; }
+  background-color: #08090A;
+}
 
-/* line 375, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-.container {
+.footer h1 {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-  box-sizing: border-box;
+  font-family: 'Fugaz One', cursive;
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  line-height: 24px;
+}
+
+.footer h1:nth-child(2) {
+  color: #FF4F4F;
+}
+
+.footer h1:nth-child(3) {
+  color: #008DD5;
+}
+
+.container {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse; }
-  /* line 382, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .container .top {
-    transition: all 1s ease-in-out; }
-    /* line 385, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .container .top input {
-      outline: none;
-      padding-left: 10px;
-      margin: 5px;
-      width: 251px;
-      height: 30px;
-      border: none;
-      font-size: 15px;
-      color: black; }
-  /* line 397, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .container textarea {
-    outline: none;
-    resize: none;
-    border: none;
-    margin: 5px;
-    padding: 5px;
-    width: 529px;
-    height: 100px;
-    font-size: 15px; }
-  /* line 410, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .container div:nth-child(3) input {
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 800;
-    border: none;
-    margin: 5px;
-    padding: 10px;
-    width: 120px;
-    background-color: #008DD5;
-    color: white; }
-  /* line 424, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-  .container label {
-    color: white; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .top {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.container .top input {
+  outline: none;
+  padding-left: 10px;
+  margin: 5px;
+  width: 251px;
+  height: 30px;
+  border: none;
+  font-size: 15px;
+  color: black;
+}
+
+.container textarea {
+  outline: none;
+  resize: none;
+  border: none;
+  margin: 5px;
+  padding: 5px;
+  width: 529px;
+  height: 100px;
+  font-size: 15px;
+}
+
+.container div:nth-child(3) input {
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  border: none;
+  margin: 5px;
+  padding: 10px;
+  width: 120px;
+  background-color: #008DD5;
+  color: white;
+}
+
+.container label {
+  color: white;
+}
 
 /* Animation */
-/* line 433, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
 .anim-typewriter {
-  animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal; }
+  -webkit-animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+          animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 3em;
+  }
+}
 
 @keyframes typewriter {
   from {
-    width: 0; }
+    width: 0;
+  }
   to {
-    width: 3em; } }
+    width: 3em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75); }
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
   to {
-    border-right-color: transparent; } }
+    border-right-color: transparent;
+  }
+}
 
 @keyframes bounce {
   from {
-    transform: translateY(0px); }
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
   to {
-    transform: translateY(-15px); } }
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
 
 @-webkit-keyframes bounce {
   from {
-    transform: translateY(0px); }
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
   to {
-    transform: translateY(-15px); } }
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
 
 @media screen and (max-width: 1400px) {
-  /* line 479, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
   .footer {
     height: auto;
     margin: 0 auto 0 auto;
     padding-right: 0px;
-    padding-left: 0px; } }
+    padding-left: 0px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
-  /* line 489, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
   .imagegrid .box {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 900px) {
-  /* line 497, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
   .banner .quote {
     display: none;
     width: 200px;
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto; }
-  /* line 508, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    margin-right: auto;
+  }
   .imagegrid .box {
-    display: block; }
-    /* line 512, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .imagegrid .box .item img {
-      height: auto !important;
-      object-fit: cover;
-      width: 100%; }
-  /* line 521, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    display: block;
+  }
+  .imagegrid .box .item img {
+    height: auto !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
   .footer {
     padding-top: 60px;
-    padding-right: 10px; }
-    /* line 525, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footer h1 {
-      font-size: 6vw;
-      line-height: 3vw; }
-  /* line 531, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    padding-right: 10px;
+  }
+  .footer h1 {
+    font-size: 6vw;
+    line-height: 3vw;
+  }
   .footerR {
     display: inherit;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
-    padding-bottom: 20px; }
-    /* line 538, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
-    .footerR .text {
-      padding-left: 10px; }
-  /* line 546, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    padding-bottom: 20px;
+  }
+  .footerR .text {
+    padding-left: 10px;
+  }
   .container .top input {
-    width: 25vw; }
-  /* line 551, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    width: 25vw;
+  }
   .container textarea {
-    width: 53vw; } }
+    width: 53vw;
+  }
+}
 
 @media screen and (max-width: 600px) {
-  /* line 561, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
   .banner .quote {
     display: none;
     width: 200px;
     left: 0;
     right: 0;
     margin-left: auto;
-    margin-right: auto; }
-  /* line 571, /Users/louisvallaey/Documents/louisvallaey.github.io/Pho/css/style.scss */
+    margin-right: auto;
+  }
   .container {
-    display: none; } }
-
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

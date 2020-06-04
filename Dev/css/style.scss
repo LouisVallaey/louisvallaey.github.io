@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
+
+body {
+  margin: 0 auto;
+  font-family: "Rajdhani", sans-serif;
+  background-color: white;
+}
+
+.header {
+  z-index: 100;
+  position: absolute;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: 9vh;
+
+    p {
+      font-size: 25px;
+      margin: 0 0 0 30px;
+      color: white;
+
+      &:nth-child(2) {
+        line-height: 24px;
+        width: 60px;
+        color: #352c71;
+        margin: 0;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
+
+.contentBlock {
+  font-family: "Fugaz One", cursive;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 116vh;
+  background-color: rgb(8, 8, 8);
+  svg {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 20vh;
+    /* set height to pixels if you want angle to change with screen width */
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    .leftImage {
+      opacity: 0;
+      flex: 2;
+      height: 70vh;
+      background-image: url("../img/glan.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .rightText {
+      margin-left: 50px;
+      .usedthings {
+        opacity: 0;
+        color: #ff4f4f;
+      }
+      .headercontent {
+        opacity: 0;
+        color: white;
+        font-size: 50px;
+        margin: 0;
+        line-height: 36px;
+      }
+      .undertitle {
+        opacity: 0;
+        margin: 0;
+        color: #ff4f4f;
+        font-size: 15px;
+      }
+      .textcontent {
+        opacity: 0;
+        font-family: "Rajdhani", sans-serif;
+        color: white;
+        margin-bottom: 5px;
+      }
+      .icons {
+        opacity: 0;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      flex: 3;
+    }
+  }
+}
+
+.contentBlockW {
+  font-family: "Fugaz One", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 70vh;
+    .leftImage {
+      opacity: 0;
+      flex: 2;
+      height: 70vh;
+      background-color: white;
+      background-image: url("../img/encrew.png");
+      background-size: cover;
+    }
+    .rightText {
+      text-align: right;
+      margin-right: 50px;
+      .usedthings {
+        opacity: 0;
+        color: #008dd5;
+      }
+      .headercontent {
+        opacity: 0;
+        color: black;
+        font-size: 50px;
+        margin: 0;
+        line-height: 36px;
+      }
+      .undertitle {
+        opacity: 0;
+        margin: 0;
+        color: #008dd5;
+        font-size: 15px;
+      }
+      .textcontent {
+        opacity: 0;
+        font-family: "Rajdhani", sans-serif;
+        color: black;
+        margin-bottom: 5px;
+      }
+      .icons {
+        opacity: 0;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      flex: 3;
+    }
+  }
+}
+
+.slant {
+  margin-top: 150px;
+  height: 10vw;
+  position: relative;
+
+  svg {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 10vw;
+    /* set height to pixels if you want angle to change with screen width */
+  }
+}
+
+.footerR {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #08090a;
+
+  .text {
+    width: auto;
+    margin-right: 10px;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    i {
+      color: #4392f1;
+      margin-right: 4px;
+      font-size: 18px;
+    }
+
+    p {
+      font-family: "Rajdhani", sans-serif;
+      color: white;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.footer {
+  padding-top: 1vw;
+  padding-right: 240px;
+  padding-left: 240px;
+  text-align: right;
+  height: 20vw;
+  background-color: #08090a;
+
+  h1 {
+    transition: all 1s ease-in-out;
+    font-family: "Fugaz One", cursive;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    line-height: 24px;
+
+    &:nth-child(2) {
+      color: #ff4f4f;
+    }
+
+    &:nth-child(3) {
+      color: #008dd5;
+    }
+  }
+}
+
+.container {
+  transition: all 1s ease-in-out;
+  box-sizing: border-box;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  .top {
+    transition: all 1s ease-in-out;
+
+    input {
+      outline: none;
+      padding-left: 10px;
+      margin: 5px;
+      width: 251px;
+      height: 30px;
+      border: none;
+      font-size: 15px;
+      color: black;
+    }
+  }
+
+  textarea {
+    outline: none;
+    resize: none;
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    width: 529px;
+    height: 100px;
+    font-size: 15px;
+  }
+
+  div {
+    &:nth-child(3) {
+      input {
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800;
+        border: none;
+        margin: 5px;
+        padding: 10px;
+        width: 120px;
+        background-color: #008dd5;
+        color: white;
+      }
+    }
+  }
+
+  label {
+    color: white;
+  }
+}
+/* Animation */
+
+.anim-typewriter {
+  animation: typewriter 500ms steps(44) 500ms 1 normal both,
+    blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 2em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    height: auto;
+    margin: 0 auto 0 auto;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .imagegrid {
+    .box {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    .quote {
+      display: none;
+      width: 200px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .imagegrid {
+    .box {
+      display: block;
+
+      .item {
+        img {
+          height: auto !important;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 60px;
+    padding-right: 10px;
+
+    h1 {
+      font-size: 6vw;
+      line-height: 3vw;
+    }
+  }
+
+  .footerR {
+    display: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .text {
+      padding-left: 10px;
+    }
+  }
+
+  .container {
+    .top {
+      input {
+        width: 25vw;
+      }
+    }
+
+    textarea {
+      width: 53vw;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    .quote {
+      display: none;
+      width: 200px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .container {
+    display: none;
+  }
+}

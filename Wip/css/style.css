@@ -1,85 +1,141 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
-/* line 4, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
 body {
   margin: 0 auto;
   font-family: 'Rajdhani', sans-serif;
   color: white;
-  background-color: #08090A; }
-  /* line 10, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-  body .header {
-    z-index: 100;
-    position: absolute; }
-    /* line 14, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-    body .header .logo {
-      display: flex;
-      align-items: center;
-      height: 9vh; }
-      /* line 19, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-      body .header .logo p {
-        font-size: 25px;
-        margin: 0 0 0 30px;
-        color: white; }
-        /* line 24, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-        body .header .logo p:nth-child(2) {
-          line-height: 24px;
-          color: #FF4F4F;
-          margin: 0;
-          border-right: 2px solid rgba(255, 255, 255, 0.75);
-          overflow: hidden; }
-  /* line 35, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-  body p {
-    margin: 0; }
-  /* line 39, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-  body .center {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    /* line 45, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-    body .center h1 {
-      margin: 0;
-      font-size: 2vw;
-      font-family: 'Fugaz One', cursive; }
-    /* line 51, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-    body .center h2 {
-      font-size: 0.9vw;
-      margin: 0;
-      font-family: 'Rajdhani', sans-serif; }
-    /* line 57, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
-    body .center button {
-      cursor: pointer;
-      margin-top: 10px;
-      border: none;
-      color: white;
-      font-weight: 800;
-      padding: 10px;
-      background-color: #FF4F4F; }
+  background-color: #08090A;
+}
 
-/* line 70, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
+body .header {
+  z-index: 100;
+  position: absolute;
+}
+
+body .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 9vh;
+}
+
+body .header .logo p {
+  font-size: 25px;
+  margin: 0 0 0 30px;
+  color: white;
+}
+
+body .header .logo p:nth-child(2) {
+  line-height: 24px;
+  color: #FF4F4F;
+  margin: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  overflow: hidden;
+}
+
+body p {
+  margin: 0;
+}
+
+body .center {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .center h1 {
+  margin: 0;
+  font-size: 2vw;
+  font-family: 'Fugaz One', cursive;
+}
+
+body .center h2 {
+  font-size: 0.9vw;
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body .center button {
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  font-weight: 800;
+  padding: 10px;
+  background-color: #FF4F4F;
+}
+
 .anim-typewriterdev {
-  animation: typewriterdev 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal; }
+  -webkit-animation: typewriterdev 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+          animation: typewriterdev 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriterdev {
+  from {
+    width: 0;
+  }
+  to {
+    width: 2em;
+  }
+}
 
 @keyframes typewriterdev {
   from {
-    width: 0; }
+    width: 0;
+  }
   to {
-    width: 2em; } }
+    width: 2em;
+  }
+}
 
-/* line 86, /Users/louisvallaey/Documents/louisvallaey.github.io/Wip/css/style.scss */
 .anim-typewriter {
-  animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal; }
+  -webkit-animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+          animation: typewriter 500ms steps(44) 500ms 1 normal both, blinkTextCursor 700ms steps(44) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 3.3em;
+  }
+}
 
 @keyframes typewriter {
   from {
-    width: 0; }
+    width: 0;
+  }
   to {
-    width: 3.3em; } }
+    width: 3.3em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 
 @keyframes blinkTextCursor {
   from {
-    border-right-color: rgba(255, 255, 255, 0.75); }
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
   to {
-    border-right-color: transparent; } }
-
+    border-right-color: transparent;
+  }
+}
 /*# sourceMappingURL=style.css.map */
