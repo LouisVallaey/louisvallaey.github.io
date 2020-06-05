@@ -53,18 +53,20 @@ body {
   .content {
     display: flex;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 100vh;
     .leftImage {
-      opacity: 0;
       flex: 2;
       height: 70vh;
-      background-image: url("../img/glan.png");
+      background-image: url("../img/glan.jpg");
+      background-position: right;
       background-size: cover;
       background-repeat: no-repeat;
     }
     .rightText {
       margin-left: 50px;
+      margin-right: 10vw;
+      flex: 3;
       .usedthings {
         opacity: 0;
         color: #ff4f4f;
@@ -95,7 +97,6 @@ body {
           color: white;
         }
       }
-      flex: 3;
     }
   }
 }
@@ -115,12 +116,12 @@ body {
     width: 80%;
     height: 70vh;
     .leftImage {
-      opacity: 0;
       flex: 2;
       height: 70vh;
       background-color: white;
       background-image: url("../img/encrew.png");
-      background-size: cover;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
     .rightText {
       text-align: right;

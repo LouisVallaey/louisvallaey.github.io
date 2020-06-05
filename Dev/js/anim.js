@@ -1,20 +1,8 @@
 window.onload = function () {
-  setTimeout(function () {
-    $(".leftImage")
-      .css({
-        opacity: 0,
-      })
-      .animate(
-        {
-          opacity: 1,
-        },
-        1200
-      );
-    $(function () {
-      AOS.init();
-    });
-  }, 1000);
-
+  AOS.init();
+  $(function () {
+    AOS.init();
+  });
   setTimeout(function () {
     $(".headercontent")
       .css({
@@ -24,7 +12,7 @@ window.onload = function () {
         {
           opacity: 1,
         },
-        1200
+        800
       );
     $(".undertitle")
       .css({
@@ -34,7 +22,7 @@ window.onload = function () {
         {
           opacity: 1,
         },
-        1200
+        800
       );
     $(".usedthings")
       .css({
@@ -44,10 +32,10 @@ window.onload = function () {
         {
           opacity: 1,
         },
-        1200
+        800
       );
     AOS.init();
-  }, 2500);
+  }, 500);
   setTimeout(function () {
     $(".textcontent")
       .css({
@@ -57,7 +45,7 @@ window.onload = function () {
         {
           opacity: 1,
         },
-        1200
+        800
       );
     $(".icons")
       .css({
@@ -67,7 +55,7 @@ window.onload = function () {
         {
           opacity: 1,
         },
-        1200
+        800
       );
-  }, 3500);
+  }, 1000);
 };
