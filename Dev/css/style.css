@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rajdhani&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fugaz+One&display=swap");
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/Aeonik-Bold.woff2");
+  font-style: normal;
+}
+
 body {
   margin: 0 auto;
   font-family: "Rajdhani", sans-serif;
@@ -97,21 +103,22 @@ body {
 .contentBlock .content .rightText .headercontent {
   opacity: 0;
   color: white;
-  font-size: 50px;
+  font-size: 4em;
   margin: 0;
-  line-height: 36px;
+  line-height: 1em;
 }
 
 .contentBlock .content .rightText .undertitle {
   opacity: 0;
   margin: 0;
   color: #ff4f4f;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .contentBlock .content .rightText .textcontent {
   opacity: 0;
   font-family: "Rajdhani", sans-serif;
+  font-size: 1.1em;
   color: white;
   margin-bottom: 5px;
 }
@@ -183,21 +190,22 @@ body {
 .contentBlockW .content .rightText .headercontent {
   opacity: 0;
   color: black;
-  font-size: 50px;
+  font-size: 4em;
   margin: 0;
-  line-height: 36px;
+  line-height: 1em;
 }
 
 .contentBlockW .content .rightText .undertitle {
   opacity: 0;
   margin: 0;
   color: #008dd5;
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .contentBlockW .content .rightText .textcontent {
   opacity: 0;
   font-family: "Rajdhani", sans-serif;
+  font-size: 1.1em;
   color: black;
   margin-bottom: 5px;
 }
