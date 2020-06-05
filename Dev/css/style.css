@@ -118,7 +118,7 @@ body {
 .contentBlock .content .rightText .textcontent {
   opacity: 0;
   font-family: "Rajdhani", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: white;
   margin-bottom: 5px;
 }
@@ -205,7 +205,7 @@ body {
 .contentBlockW .content .rightText .textcontent {
   opacity: 0;
   font-family: "Rajdhani", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: black;
   margin-bottom: 5px;
 }
